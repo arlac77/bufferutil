@@ -3,6 +3,9 @@ node_js:
   - "14"
   - "12"
   - "10"
+arch:
+  - amd64
+  - arm64
 os:
   - linux
   - osx
@@ -13,7 +16,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: UDF88rp7h735Yi37eAN3voHr5wtkuu1LQPj/8DqkAEBCPW6HSQS0jBVHUFBPIAnLNMzCs94/o3/beujc+x1npjPgFcG82oSTazgMy2SSETUHAYTfsffmlzCtuteadvoLheLF8/D6H+DOOnTrrV3B5DHXscfBTSiPBaUWyC3oKrQ=
+    secure: invalid
   file: "$ARCHIVE_NAME"
   skip_cleanup: true
   on:
